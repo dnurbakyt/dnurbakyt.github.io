@@ -1,34 +1,19 @@
-html {
-  font-family: Roboto, sans-serif;
-  --primary-color: #330033;
-  --secondary-color: #336633;
-  --bg-color: #ccffcc;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
 }
 
+button {
+    width: 100px;
+    height: 70px;
+    font-size: 40px;
+}
 
 body {
-  background-color: var(--bg-color);
-}
-
-
-* {
-  color: var(--secondary-color);
-}
-
-h1,h3,a{
-color: var(--primary-color);
-}
-
-h3,a{
-color: var(--primary-color);
-}
-
-
-
-.car {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
 
 }

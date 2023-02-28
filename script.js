@@ -1,43 +1,31 @@
-const cars = [ 
-    {
-        "company": "Hennessey",
-        "model": "Venom",
-        "max-speed": "485"
-    },
-    {
-        "company": "Bugatti",
-        "model": "Chiron Super Sport",
-        "max-speed": "490"
-    },
-    {
-        "company": "Koenigsegg",
-        "model": "Jesko",
-        "max-speed": "483"
-    },
-    {
-        "company": "9ff",
-        "model": "GT9-R",
-        "max-speed": "413"
-    }
+let Teams = [
+{
+  name: 'Dallas Mavericks',
+  favPlayer: 'Luka Doncic',
+  titles: 0,
+  
+},
+{
+  name: 'Los Angeles Lakers',
+  favPlayer: 'LeBron James',
+  titles: 4,
+}, 
+{
+  name: 'Chicago Bulls',
+  favPlayer: 'Michel Jordan',
+  titles: 6,
+}
 ]
 
-function first_car(cars) {
-    document.write("<h3>Car company: " + cars[0]["company"] + "</h3>")
-    document.write("<h3>Model: " + cars[0]["model"] + "</h3>")
-    document.write("<h3>Max speed: " + cars[0]["max-speed"] + "</h3>")
-    return true
+
+for (let i = 0; i < Teams.length; i++) {
+  document.write("<h5>Team: " + Teams[i]["name"] + "</h5>");
+  document.write("<h5>Favourite player: " + Teams[i]["favPlayer"] + "</h5>");
+  document.write("<h5>Titles: " + Teams[i]["titles"] + "</h5>");
+  document.writeln("")
 }
 
-first_car(cars)
-
-for(let i = 1; i < 4; i++){
-    document.write("<h3>Car company: " + cars[i]["company"] + "</h3>")
-    document.write("<h3>Model: " + cars[i]["model"] + "</h3>")
-    document.write("<h3>Max speed: " + cars[i]["max-speed"] + "</h3>")
-    document.write("\n\n")
-}
-
-function re(cars){
+function re(Teams){
   return re;
 }
-console.log(cars)
+console.log(Teams)
